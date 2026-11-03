@@ -1,0 +1,35 @@
+name: Spike
+description: Time-boxed research with a written outcome
+title: 'THUB-XXX '
+labels: ['type:spike']
+body:
+  - type: textarea
+    id: summary
+    attributes:
+      label: Summary
+      description: The question to answer.
+    validations:
+      required: true
+  - type: input
+    id: timebox
+    attributes:
+      label: Time-box
+      description: Maximum effort, e.g. 4h.
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Acceptance criteria
+      description: What the written outcome must contain (findings, recommendation, follow-ups).
+      value: '- [ ] '
+    validations:
+      required: true
+  - type: textarea
+    id: meta
+    attributes:
+      label: Meta
+      value: |
+        Key: THUB-XXX · Type: Spike · Priority:  · SP:  · Epic:  · Milestone:  · Depends on:
+    validations:
+      required: true
