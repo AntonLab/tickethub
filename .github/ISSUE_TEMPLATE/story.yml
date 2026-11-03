@@ -1,0 +1,41 @@
+name: Story
+description: User-facing capability with acceptance criteria
+title: 'THUB-XXX '
+labels: ['type:story']
+body:
+  - type: textarea
+    id: summary
+    attributes:
+      label: Summary
+      description: One sentence, "As a <role> I want <capability> so that <value>".
+    validations:
+      required: true
+  - type: textarea
+    id: details
+    attributes:
+      label: Details
+      description: Scope, constraints, notes.
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Acceptance criteria
+      value: '- [ ] '
+    validations:
+      required: true
+  - type: textarea
+    id: tests
+    attributes:
+      label: Test cases
+      description: Table of ID, Level, Given, When, Then.
+      value: |
+        | ID | Level | Given | When | Then |
+        |---|---|---|---|---|
+  - type: textarea
+    id: meta
+    attributes:
+      label: Meta
+      description: Key, Type, Priority, SP, Epic, Milestone, Depends on.
+      value: |
+        Key: THUB-XXX · Type: Story · Priority:  · SP:  · Epic:  · Milestone:  · Depends on:
+    validations:
+      required: true
